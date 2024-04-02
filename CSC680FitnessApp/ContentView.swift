@@ -39,21 +39,21 @@ struct ContentView: View {
             HStack(spacing: 30){
                 Button("Start") {
                     timerRunning = true
-                }.foregroundColor(.green)
+                }.disabled(defaultSecond == 0 || timerRunning == true).foregroundColor(.green)
                 
                 Button("Stop") {
                     timerRunning = false
-                }.foregroundColor(.red)
+                }.disabled(defaultSecond == 0 || timerRunning == false).foregroundColor(.red)
                 
                 Button("Reset") {
                     defaultSecond = 0
-                }.foregroundColor(.red)
+                }.disabled(defaultSecond == 0).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
             }
         }
         .padding()
     }
 }
-
+//    .foregroundColor(.red)
 #Preview {
     ContentView()
 }
