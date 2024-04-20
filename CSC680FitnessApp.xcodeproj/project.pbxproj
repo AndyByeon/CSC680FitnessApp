@@ -14,6 +14,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FD0BEDCE2BCF28660013633D /* CSC680FitnessApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CSC680FitnessApp.entitlements; sourceTree = "<group>"; };
 		FD2298CC2BB620F000DB1610 /* CSC680FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSC680FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD2298CF2BB620F000DB1610 /* CSC680FitnessAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSC680FitnessAppApp.swift; sourceTree = "<group>"; };
 		FD2298D12BB620F000DB1610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -51,6 +52,7 @@
 		FD2298CE2BB620F000DB1610 /* CSC680FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				FD0BEDCE2BCF28660013633D /* CSC680FitnessApp.entitlements */,
 				FD2298CF2BB620F000DB1610 /* CSC680FitnessAppApp.swift */,
 				FD2298D12BB620F000DB1610 /* ContentView.swift */,
 				FD2298D32BB620FD00DB1610 /* Assets.xcassets */,
@@ -269,9 +271,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CSC680FitnessApp/CSC680FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CSC680FitnessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DALME9B853;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -297,9 +301,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = CSC680FitnessApp/CSC680FitnessApp.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CSC680FitnessApp/Preview Content\"";
+				DEVELOPMENT_TEAM = DALME9B853;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
