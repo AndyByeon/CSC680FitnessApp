@@ -11,6 +11,8 @@
 		FD2298D22BB620F000DB1610 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD2298D12BB620F000DB1610 /* ContentView.swift */; };
 		FD2298D42BB620FD00DB1610 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2298D32BB620FD00DB1610 /* Assets.xcassets */; };
 		FD2298D72BB620FD00DB1610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2298D62BB620FD00DB1610 /* Preview Assets.xcassets */; };
+		FD3A91B82BE0C84C000B2FF0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */; };
+		FD3A91BA2BE0CA23000B2FF0 /* BMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		FD2298D12BB620F000DB1610 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD2298D32BB620FD00DB1610 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD2298D62BB620FD00DB1610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				FD2298D12BB620F000DB1610 /* ContentView.swift */,
 				FD2298D32BB620FD00DB1610 /* Assets.xcassets */,
 				FD2298D52BB620FD00DB1610 /* Preview Content */,
+				FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */,
+				FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */,
 			);
 			path = CSC680FitnessApp;
 			sourceTree = "<group>";
@@ -139,8 +145,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3A91B82BE0C84C000B2FF0 /* TimerView.swift in Sources */,
 				FD2298D22BB620F000DB1610 /* ContentView.swift in Sources */,
 				FD2298D02BB620F000DB1610 /* CSC680FitnessAppApp.swift in Sources */,
+				FD3A91BA2BE0CA23000B2FF0 /* BMICalculatorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
