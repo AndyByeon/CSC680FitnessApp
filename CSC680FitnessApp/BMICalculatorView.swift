@@ -5,12 +5,10 @@
 //  Created by Andy Byeon on 4/29/24.
 //
 
-//import Foundation
 import SwiftUI
 
 
 struct BMICalculatorView: View{
-    
     @State
     var feet = ""
     
@@ -75,7 +73,7 @@ struct BMICalculatorView: View{
                 Button("Calculate BMI") {
                     calculateBMI()
                 }.disabled(feet .isEmpty || inches .isEmpty || pounds .isEmpty)
-                Text("Your BMI is: \(String(format: "%.2f", BMI))")
+                Text("Your BMI is: \(String(format: "%.1f", BMI))")
             }
         }
     }

@@ -4,12 +4,9 @@
 //
 //  Created by Andy Byeon on 4/29/24.
 //
-
-//import Foundation
 import SwiftUI
 
 struct TimerView: View {
-    
     let secondsOption = 0...60
     
     @State

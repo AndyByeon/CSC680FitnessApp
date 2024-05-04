@@ -151,6 +151,7 @@ struct SecondView: View{
 
 struct ContentView: View{
     
+    @EnvironmentObject var manager: HealthManager
     let icons:[String] = ["timer.circle", "figure.walk.circle", "number.circle", "cross.circle"]
     var body: some View {
         NavigationView{
@@ -165,12 +166,13 @@ struct ContentView: View{
                             .foregroundColor(.purple)
                     }
                     
-                    NavigationLink(destination: SecondView()){
+                    NavigationLink(destination: StepCounterView()){
                         Image(systemName: icons[1])
                             .font(.largeTitle)
                             .symbolRenderingMode(.monochrome)
                             .foregroundColor(.purple)
                     }
+                    .environmentObject(manager)
                     
                     NavigationLink(destination: BMICalculatorView()){
                         Image(systemName: icons[3])

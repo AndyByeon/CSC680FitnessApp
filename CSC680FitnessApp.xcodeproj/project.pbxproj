@@ -13,6 +13,7 @@
 		FD2298D72BB620FD00DB1610 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD2298D62BB620FD00DB1610 /* Preview Assets.xcassets */; };
 		FD3A91B82BE0C84C000B2FF0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */; };
 		FD3A91BA2BE0CA23000B2FF0 /* BMICalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */; };
+		FD3A91BC2BE0CED4000B2FF0 /* StepCounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD3A91BB2BE0CED4000B2FF0 /* StepCounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FD2298D62BB620FD00DB1610 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMICalculatorView.swift; sourceTree = "<group>"; };
+		FD3A91BB2BE0CED4000B2FF0 /* StepCounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepCounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FD2298D52BB620FD00DB1610 /* Preview Content */,
 				FD3A91B72BE0C84C000B2FF0 /* TimerView.swift */,
 				FD3A91B92BE0CA23000B2FF0 /* BMICalculatorView.swift */,
+				FD3A91BB2BE0CED4000B2FF0 /* StepCounterView.swift */,
 			);
 			path = CSC680FitnessApp;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD3A91BC2BE0CED4000B2FF0 /* StepCounterView.swift in Sources */,
 				FD3A91B82BE0C84C000B2FF0 /* TimerView.swift in Sources */,
 				FD2298D22BB620F000DB1610 /* ContentView.swift in Sources */,
 				FD2298D02BB620F000DB1610 /* CSC680FitnessAppApp.swift in Sources */,
@@ -286,6 +290,7 @@
 				DEVELOPMENT_TEAM = DALME9B853;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to use the step counter feature of the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,6 +321,7 @@
 				DEVELOPMENT_TEAM = DALME9B853;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "Please allow access to use the step counter feature of the app";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
