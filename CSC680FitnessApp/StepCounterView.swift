@@ -66,9 +66,9 @@ struct StepCounterView: View{
     var body: some View {
         NavigationView{
             VStack{
-                Text(String(format: "Step Count: \n %.2f", manager.stepCount))
+                Text(String(format: "Today's Step Count: \n %.0f", manager.stepCount))
             }
-            .font(.system(size: 50))
+            .font(.system(size: 40))
             .onAppear {
                 manager.updatingSteps()
             }
