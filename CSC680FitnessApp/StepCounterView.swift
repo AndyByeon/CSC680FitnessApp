@@ -49,7 +49,7 @@ class HealthManager: ObservableObject {
     }
     
     func updatingSteps(){
-        Timer.scheduledTimer(withTimeInterval: 15, repeats: true) { _ in
+        Timer.scheduledTimer(withTimeInterval: 10, repeats: true) { _ in
                     self.fetchSteps { stepCount in
                         DispatchQueue.main.async {
                             self.stepCount = stepCount
@@ -68,6 +68,7 @@ struct StepCounterView: View{
             VStack{
                 Text(String(format: "Today's Step Count: \n %.0f", manager.stepCount))
             }
+            .multilineTextAlignment(.center)
             .font(.system(size: 40))
             .onAppear {
                 manager.updatingSteps()

@@ -17,10 +17,6 @@ struct TimerView: View {
     
     let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
     
-    func vibrate() {
-        let generator = UIImpactFeedbackGenerator(style: .heavy)
-        generator.impactOccurred()
-    }
     
     var body: some View {
         NavigationView{
@@ -38,22 +34,23 @@ struct TimerView: View {
                         timerRunning = false
                     }
                 }
+                .sensoryFeedback(.warning, trigger: defaultSecond == 0 && timerRunning)
                 
                 HStack(spacing: 30){
                     Button("Start") {
                         timerRunning = true
-                        if defaultSecond == 0 {
-                            vibrate()
-                        }
-                    }.disabled(defaultSecond == 0 || timerRunning == true).foregroundColor(.green)
+                    }
+                    .disabled(defaultSecond == 0 || timerRunning == true).foregroundColor(.green)
                     
                     Button("Stop") {
                         timerRunning = false
-                    }.disabled(defaultSecond == 0 || timerRunning == false).foregroundColor(.red)
+                    }
+                    .disabled(defaultSecond == 0 || timerRunning == false).foregroundColor(.red)
                     
                     Button("Reset") {
                         defaultSecond = 0
-                    }.disabled(defaultSecond == 0).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                    }
+                    .disabled(defaultSecond == 0).foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
                 }
             }
             .padding()
